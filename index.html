@@ -4,19 +4,20 @@
     <meta charset="UTF-8">
     <title>UnderWatch</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.2.0/css/fork-awesome.min.css" integrity="sha256-XoaMnoYC5TH6/+ihMEnospgm0J1PM/nioxbOUdnM8HY=" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/dbf088141b.js" crossorigin="anonymous"></script>
 </head>
 <body>
 <header>
-    <nav class="navbar">
+    <nav id="navbar">
         <ul>
             <li><a href="#home">
                 <img class = 'underwatchLogo' src = 'logo.png' alt ="Underwatch"/>
             </a></li>
-            <li><a href="#social media"><i class="fa fa-discord" aria-hidden="true"></i></a></li>
-            <li><a href="#social media"><i class="fa fa-youtube" aria-hidden="true"></i></a></li>
-            <li><a href="#social media"><i class="fa fa-address-book" aria-hidden="true"></i></a></li>
-            <li><a href="#social media"><i class="fa fa-trophy" aria-hidden="true"></i></a></li>
+            <li><a href="#social media"><i class="fa-brands fa-discord" aria-hidden="true"></i></a></li>
+            <li><a href="#social media"><i class="fa-brands fa-youtube" aria-hidden="true"></i></a></li>
+            <li><a href="#about"  title="About Us"><i class="fas fa-address-book" aria-hidden="true"></i></a></li>
+            <li><a href="#social media"><i class="fas fa-trophy" aria-hidden="true"></i></a></li>
+            <li><a href="#social media"><i class="fas fa-donate" aria-hidden="true"></i></a></li>
 
 
         </ul>
@@ -35,16 +36,34 @@
     </video>
     </div>
 </header>
-<main>
-<div id ="about">
-    <h1>About Us</h1>
-    <div>
+<main id ="about">
+    <div class="about">
+        <h1>About Us</h1>
+        <img src="ow2-featured.webp" alt="image of Overwatch characters"/>
         <p>
+            Underwatch is a non-profit eSports organization, which strives to create a safe space for all players! Our goal is to connect you with other like-minded people and thereby improve your gameplay.
+            With the help of our supporters, mods and team managers, we are able to bring to you 100% free teams with professional coaches. This would not be possible without our donors, so thank you to them again!
+            For people who don’t want to, or aren’t ready, to join a competitive team, we offer a vivid community of Overwatch players, with multiple events and tournaments every single week.
         </p>
-    </div>
 </div>
 </main>
 
+
+
+
+
+<script>
+var prevScrollpos = window.pageYOffset;
+window.onscroll = function() {
+var currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos) {
+    document.getElementById("navbar").style.display = "block";
+  } else {
+    document.getElementById("navbar").style.display = "none";
+  }
+  prevScrollpos = currentScrollPos;
+}
+</script>
 </body>
 </html>
 
